@@ -1,0 +1,58 @@
+gulp作用：gulp是基于Nodejs的自动任务运行器， 她能自动化地完成 
+javascript/coffee/sass/less/html/image/css 等文件的的测试、
+检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的
+这些步骤。
+在实现上，她借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，
+使得在操作上非常简单。
+通过本文，我们将学习如何使用Gulp来改变开发流程，从而使开发更加快速高效。
+
+
+
+
+一:
+1、打开项目文件，打开命令窗口
+2、cnpm init
+3、json文件   写: yes. 生成了package.json 文件。
+4、cnpm install gulp --save-dev   本地安装。生成了 node_modules 文件。
+
+5、先安装插件：列如 css压缩的：cnpm install gulp-clean-css --save-dev
+		js压缩：cnpm install --save-dev gulp-uglify
+		SASS、
+		LEss
+
+
+6、在项目目录下创建 gulpfile.js 文件。 gulpfile是用来描述任务的。
+	写要执行的任务。eg：
+
+
+7、	var gulp= require("gulp"),
+	minifyCss= require("gulp-clean-css");
+
+	//任务1
+	gulp.task("minifyCss",function(){
+		//资源路径
+		gulp.src("style/*css")
+			//管道
+			.pipe(minifyCss())
+			//管道输出:输出文件目录
+			.pipe(gulp.dest("dist/css"));
+
+	});
+
+8、写完后再执行命令： gulp minifyCss
+执行完毕就生产了一个 dist文件，里面有css文件。就是把压缩了的放在里面了。
+
+
+二：使用SASS： 是使css快速开发
+
+1、在项目文件里有了gulp环境之后，可直接在koala软件里转换。
+2、编写sass文件夹，里面写：文件名.scss 后缀的文件。
+
+3、在koala软件里转换，可自己定义生成.css的文件路径。默认的为自己生成一个css文件夹，里面的.css文件就是.scss文件转换过来的。
+4、重点：：：要把生成的css文件引入html文件里面！！！！
+
+
+	
+
+
+

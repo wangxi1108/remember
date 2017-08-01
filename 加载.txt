@@ -1,0 +1,24 @@
+1、
+命令：http-server
+http://127.0.0.1:8080
+
+全部路径：http://127.0.0.1:8080/html/common/tou.html
+
+json的路径按照浏览器报错的路径来写 ：../common/json/main.json
+../为项目文件夹。
+
+
+
+2、
+
+同步：加载图片
+$.ajaxSettings.async = false
+
+
+
+
+react:
+http://localhost:3000/
+
+
+ "proxy": "http://localhost:8090"

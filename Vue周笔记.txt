@@ -1,0 +1,7 @@
+1.装less，先全局安装，再安装，再在文件里配置
+	项目中build: webpack.base.conf.js里面写：
+
+ {
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader",
+      },

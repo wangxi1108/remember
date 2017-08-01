@@ -1,0 +1,6 @@
+
+		if(zhuce._callName == shuRu._userName && zhuce._passworld == shuRu.miMa){
+			console.log("用户名成功");
+		}
+
+		hashHistory.push();

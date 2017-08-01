@@ -1,0 +1,9 @@
+创建你的博客目录
+在博客目录下打开命令行输入npm install hexo-cli -g全局安装hexo框架
+这里使用npm速度特别的慢
+初始化博客 hexo init blog 创建一个blog目录克隆hexo-starter
+在漫长的等待后 出现信息提示：
+INFO Start blogging with Hexo!
+进入blog 
+hexo g 生成静态页面
+hexo s 本地服务器
