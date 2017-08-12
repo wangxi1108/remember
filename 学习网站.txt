@@ -89,3 +89,13 @@ http://www.cnblogs.com/lixuemin/p/5754289.html
 
 24.Bootstrap类名手册
 http://www.jqhtml.com/bootstraps-syntaxhigh/index.html
+
+25.复习1（重）
+https://li-xinyang.gitbooks.io/frontend-notebook/content/
+
+图形界面
+26.element-ui
+http://element.eleme.io/#/zh-CN/component/carousel
+
+27.
+http://panjiachen.github.io/vue-element-admin/#/login
